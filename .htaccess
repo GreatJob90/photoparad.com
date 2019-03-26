@@ -1,0 +1,6 @@
+RewriteCond %{HTTP_USER_AGENT} (?i:iphone|ipad)
+RewriteRule ^(/)?$ http://photoparad.com [R=301]
+RewriteCond %{HTTP_USER_AGENT} (?i:android)
+RewriteRule ^(/)?$ https://play.google.com/store/apps/details?id=com.photoparad [R=301]
+RewriteCond %{HTTP_USER_AGENT} (?i:symbian)
+RewriteRule ^(/)?$ http://photoparad.com [R=301]

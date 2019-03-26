@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #000;
+}
+
+h2{
+	font-size: 28pt;
+	font-weight: 700;
+}
+
+p{
+	font-size: 24px;
+}
+
+input, textarea{
+   max-width:100%;
+}
+
+.section-head{
+	position: relative;
+	background-image: url(img/background.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	height: 100vh;
+}
+
+.head-container{
+	margin: 0 auto;
+	padding: 20vh 40px 60px 40px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	width: 60%;
+}
+
+.appname{
+	margin-bottom: 60px;
+	white-space: nowrap;
+}
+
+.app-logo{
+	width: 60px;
+	height: 60px;
+	margin-right: 35px;
+	vertical-align: middle;
+}
+
+.app-name{
+	height: 48px;
+	vertical-align: middle;
+}
+
+.head-container h2{
+	margin-bottom: 65px;
+}
+
+.app-buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.app-buttons img{
+	width: 220px;
+	height: 69px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.app-buttons img:first-child{
+	margin-right: 40px;
+}
+
+.head-text{
+	margin-bottom: 35px;
+}
+
+/*========================================================<<<< */
+
+.section-policy{
+	margin-top: 50px;
+}
+
+.policy-container{
+	margin: 0 auto;
+	margin-bottom: 50px;
+	padding: 60px 40px 60px 40px;
+	background: #f2f2f2;
+	text-align: justify;
+	width: 75%;
+}
+
+.policy-container h2{
+	font-size: 24px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.policy-container h3{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.policy-container p{
+	font-size: 18px;
+	text-indent: 32px;
+}
+
+
+/*========================МЕДИАЗАПРОСЫ====================<<<< */
+
+@media screen and (max-width: 450px){
+
+	.section-head {
+		background-image: url(img/background-mobile.jpg);
+	}
+
+	h2{
+		font-size: 22pt;
+		font-weight: 700;
+	}
+
+	.head-container{
+		width: 75%;
+	}
+
+	.app-logo{
+		width: 50px;
+		height: 50px;
+		margin-right: 25px;
+	}
+
+	.app-name{
+		height: 42px;
+	}
+
+	.app-buttons img{
+		width: auto;
+		height: 50px;
+		border-radius: 7px;
+	}
+
+	.app-buttons img:first-child{
+		margin-right: 22px;
+	}
+
+}
+
+/*=====================================================355<<<< */
+
+@media screen and (max-width: 377px){
+
+	h2{
+		font-size: 16pt;
+		font-weight: 700;
+	}
+
+	.app-logo{
+		width: 40px;
+		height: 40px;
+		margin-right: 25px;
+	}
+
+	.app-name{
+		height: 32px;
+	}
+
+	.app-buttons img{
+		width: auto;
+		height: 36px;
+	}
+
+	.head-text{
+		font-size: 18px;
+	}
+
+}

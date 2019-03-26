@@ -1,0 +1,6 @@
+RewriteCond %{HTTP_USER_AGENT} (?i:iphone|ipad)
+RewriteRule ^(/)?$ http://site/ios/ [R=301]
+RewriteCond %{HTTP_USER_AGENT} (?i:android)
+RewriteRule ^(/)?$ http://site/android/ [R=301]
+RewriteCond %{HTTP_USER_AGENT} (?i:symbian)
+RewriteRule ^(/)?$ http://site/symbian/ [R=301]
