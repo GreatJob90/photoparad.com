@@ -4,3 +4,27 @@ RewriteCond %{HTTP_USER_AGENT} (?i:android)
 RewriteRule ^(/)?$ https://play.google.com/store/apps/details?id=com.photoparad [R=301]
 RewriteCond %{HTTP_USER_AGENT} (?i:symbian)
 RewriteRule ^(/)?$ http://photoparad.com [R=301]
+
+рабочий варик для photoparad.com
+
+RewriteEngine on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+RewriteCond %{HTTP_USER_AGENT} (?i:iphone|ipad)
+RewriteRule ^download.html$ /downloadAppStore.html [R=301]
+
+RewriteCond %{HTTP_USER_AGENT} (?i:android)
+RewriteRule ^download.html$ https://play.google.com/store/apps/details?id=com.photoparad [R=301]
+
+
+Запрет кеширования
+
+<IfModule mod_headers.c>
+        Header append Cache-Control "no-store, no-cache, must-revalidate"
+</IfModule>
+ 
+# Заголовок Expires
+<IfModule mod_expires.c>
+        ExpiresActive On ExpiresDefault "now"
+</IfModule>

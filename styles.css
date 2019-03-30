@@ -118,12 +118,14 @@ input, textarea{
 @media screen and (max-width: 450px){
 
 	.section-head {
+		background-size: 68vh;
 		background-image: url(img/background-mobile.jpg);
 	}
 
 	h2{
 		font-size: 22pt;
 		font-weight: 700;
+		text-align: left;
 	}
 
 	.head-container{
@@ -154,7 +156,7 @@ input, textarea{
 
 /*=====================================================355<<<< */
 
-@media screen and (max-width: 377px){
+@media screen and (max-width: 415px){
 
 	h2{
 		font-size: 16pt;
